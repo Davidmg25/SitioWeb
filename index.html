@@ -1,227 +1,63 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <title>Farmacia_Online</title>
+    <title>¿Que es una Landing Page?</title>
+    <link rel="stylesheet" href="LG.css">
+   
 </head>
 
 <body>
-
-   
-    <header>
+    <div class="body">
+        <header>
+            <h1>
+               ¡Que es el modelo DOM!
+            </h1>
+        </header>
         <div class="container">
-            <h1 class=>FarmaOnline</h1>
-            <hr>
+          <p class="parrafo"> DOM es una abreviatura de Document Object Model. 
+            En español podríamos traducirlo por Modelo de Objeto de Documento, 
+            aunque en DesarrolloWeb.com nos hemos referido al DOM habitualmente 
+            con el nombre de jerarquía de objetos del navegador, porque realmente 
+            es una estructura jerárquica donde existen varios objetos y unos dependen 
+            de otros. Los objetos del DOM modelizan tanto la ventana del navegador como
+            el historial, el documento o página web, y todos los elementos que pueda tener
+            dentro la propia página, como párrafos, divisiones, tablas, formularios y sus campos,
+            etc. A través del DOM se puede acceder, por medio de Javascript, a cualquiera de estos 
+            elementos, es decir a sus correspondientes objetos para alterar sus propiedades o invocar
+            a sus métodos. Con todo, a través del DOM, queda disponible para los programadores
+            de Javascript, cualquier elemento de la página, para modificarlos, suprimirlos,
+            crear nuevos elementos y colocarlos en la página, etc. Lo cierto es que quien
+            quiera que haya realizado un poco de trabajo con Javascript, aunque este haya
+            sido muy básico, ha tocado el DOM alguna vez. Aquí en desarrollo web .com hemos
+            visto multitud de ejemplos en los que se tocaba el DOM. Cuando por ejemplo hacemos
+            una sentencia en la que se accede al valor de un campo de formulario, con un código como este: document.forms[0].elemento_formulario.value, estamos accediendo a la estructura de objetos del DOM. El DOM está definido y administrado por el W3C, por lo que los distintos navegadores simplemente aplican las especificaciones del World Wide Web Consortium, para dar soporte al DOM en sus aplicaciones. El DOM no sólo permite modificar páginas web en HTML, sino también documentos XML. A lo largo de la historia de los navegadores, se han ido aplicando en mayor o menor manera las características del DOM. A medida que se sucedían versiones de los navegadores también se iba dando un mayor soporte a las especificaciones del DOM, en lo que se han llamado los niveles del DOM. El primero que empezó a disponibilizar por medio de objetos los componentes de la página fue Netscape 2.0, que incorporaba lo que se llama el DOM nivel 0. Actualmente, la última especificación publicada es DOM nivel 4. Es importante destacar ahora que, dado que los niveles del DOM cambian de versión a versión del navegador y que las especificaciones se han entendido de manera distinta por las distintas organizaciones creadoras de los navegadores, 
+            se ha producido un marco donde trabajar con los objetos de la página difiere de un navegador a otro. </p>
+
+            <img class="DOM" src="img/1200px-DOM-model.svg.png" alt="DOM">
         </div>
 
-        <div class="container">
-            <div class="SC">
-                <h2>¿Que medicamento estas buscando?</h2>
-                <p>Tenemos disponiblidad de productos de las mejores marcas a excelente precio y de muy buena calidad</p>
-                <form>
-                    <input
-                      class="search"
-                      type="text"
-                      placeholder="¿Que producto quieres?"
-                      id="buscador"
-                    />
-                    <input type="submit" class="submit-buscador" />
-                  </form>
-            </div>
-        </div>
-    </header>
+       
 
- 
-  
-          </div>
-    
-    <section class="store">
-        <div class="container">
-            <div class="items">
-                <div class="row">
+        <footer>
+            <a href="file:///C:/Users/DM1001/OneDrive/Documentos/DSW_D/Proyecto_IuE/ProyectdHDV/PortafolioDM/index.html">
+                <p>Regresar</p>
+            </a>
+        </footer>
+    </div>
 
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Sevedol EXTRA FUERTE *8 und</h3>
-                            <img class="item-image" src="img/sevedol.webp">
-
-                            <div class="item-details">
-                                <h4 class="item-price">10.000$</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">aztriomicina *3 und 500 mg </h3>
-
-                            <img class="item-image" src="img/azitromicina.webp">
-
-                            <div class="item-details">
-                                <h4 class="item-price">18.000$</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Allerzitina 10 und</h3>
-
-                            <img class="item-image" src="img/allerzitina.jpg">
-
-                            <div class="item-details">
-                                <h4 class="item-price">15.000$</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Acetaminofen *100 und 500mg </h3>
-
-                            <img class="item-image" src="img/act.jpg">
-
-                            <div class="item-details">
-                                <h4 class="item-price">10.000$</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">dolex multisintomas </h3>
-
-                            <img class="item-image" src="dolex.png">
-                            <div class="item-details">
-                                <h4 class="item-price">20.000$</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6">
-                        <div class="item shadow mb-4">
-                            <h3 class="item-title">Alcohol mk *750ml</h3>
-
-                            <img class="item-image" src="img/alcohol-antiseptico-mk-frasco-de-700-ml.webp">
-                            <div class="item-details">
-                                <h4 class="item-price">7.000$</h4>
-                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-   
-    
-    <section class="shopping-cart">
-        <div class="container">
-            <h1 class="text-center">CARRITO</h1>
-            <hr>
-            <div class="row">
-                <div class="col-6">
-                    <div class="shopping-cart-header">
-                        <h6>Producto</h6>
-                    </div>
-                </div>
-                <div class="col-2">
-                    <div class="shopping-cart-header">
-                        <h6 class="text-truncate">Precio</h6>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="shopping-cart-header">
-                        <h6>Cantidad</h6>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="shopping-cart-items shoppingCartItemsContainer">
-            </div>
-        
-            <div class="row">
-                <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
-                        <p class="mb-0">Total</p>
-                        <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
-                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
-                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
-                            </div>
-                        </div>
-                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
-                            data-target="#comprarModal">Comprar</button>
-                    </div>
-                </div>
-            </div>
-
-            
-            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <p>Pronto recibirá su pedido</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-
-
-        </div>
-
-    </section>
-   
-    <footer class="">
-        <p class="">Tienda virtual</p>
-    </footer>
-    
-
-
-
-
-    <!-- SCRIPTS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-        crossorigin="anonymous"></script>
-
-    <script src="./tienda.js"></script>
+    <div class="burbujas">
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+        <div class="burbuja"></div>
+       </div>
 
 </body>
 
+</html>
+</body>
 </html>
