@@ -1,0 +1,177 @@
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+  background-color: rgb(255, 255, 255);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.body{
+    width: 95%;
+    max-width: 87.5em;
+    margin: 0 auto;
+}
+
+
+h1{
+    font-size: 1.8em;
+}
+
+header{
+
+    text-align: left;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.container{
+    background-color: #14124d;
+    border: 1px solid black;
+    border-radius: 15px;
+    color: white;
+    padding: 0.125rem 1.25rem 0.125rem 1.25rem;
+    text-align: center;
+    font-size: 0.75em;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+a{
+    text-decoration: none;
+    color:white;
+   font-size: 2em;
+   padding: 0.5em;
+   background-color: #14124d;
+    border-radius:50%;
+}
+
+
+p{
+    display: flex;
+    text-align: left;
+}
+
+
+.title{
+    width: 100%;
+    max-width: 25em;
+    text-align: center;
+    transition: 0.5s;
+    font-size: 1.25em;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+
+a  p:hover{
+    color: red;
+    background-color: #14124d;
+    
+}
+
+img{
+    width: 50%;
+}
+
+
+
+
+.burbuja{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #fff;
+    opacity: .3;
+
+    position: absolute;
+    bottom: -150;
+    left: 5%;
+    
+
+    animation: burbujas 3s linear infinite ;
+    
+}
+
+.burbuja:nth-child(1){
+    width: 80px;
+    height: 80px;
+    left: 5%;
+    animation-duration:  3s ;
+    animation-delay: 0s;
+}
+
+.burbuja:nth-child(2){
+    width: 100px;
+    height: 100px;
+    left: 35%;
+    animation-duration:  3s ;
+    animation-delay: 5s;
+}
+
+.burbuja:nth-child(3){
+    width: 80px;
+    height: 80px;
+    left: 45%;
+    animation-duration:  3s ;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(4){
+    width: 50px;
+    height: 50px;
+    left: 55%;
+    animation-duration:  3s ;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(5){
+    width: 100px;
+    height: 100px;
+    left: 75%;
+    animation-duration:  3s ;
+    animation-delay: 3s;
+}
+.burbuja:nth-child(6){
+    width: 80px;
+    height: 80px;
+    left: 95%;
+    animation-duration:  3s ;
+    animation-delay: 3s;
+}
+
+
+@keyframes burbujas{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+    
+    50%{
+        opacity: .4;
+
+    }
+    100%{
+        bottom: 100vh;
+        opacity: 0;
+    }
+}
+   
+    
+
+
+    
