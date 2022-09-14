@@ -1,73 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
-    <link rel="stylesheet" href="style2.css">
-    <meta name="viewport" content="width=device-width, user-scalable=no,initial-scale=1.0,maximB">
-<body id="body">
-    <div class="contenedor">
-    <header class="h">  
-        <h1 class="th1">David Alejandro Mesa Gallón <br>
-            Nunca es tarde para mejorar </h1>
-        
-        <img class="F2" src="imagenes/4a24ee21-21d3-4068-91dc-88a0e6a2fa8a.png" alt="Foto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Farmacia_Online</title>
+</head>
+
+<body>
+
+   
+    <header>
+        <div class="container">
+            <h1 class=>FarmaOnline</h1>
+            <hr>
+        </div>
+
+        <div class="container">
+            <div class="SC">
+                <h2>¿Que medicamento estas buscando?</h2>
+                <p>Tenemos disponiblidad de productos de las mejores marcas a excelente precio y de muy buena calidad</p>
+                <form>
+                    <input
+                      class="search"
+                      type="text"
+                      placeholder="¿Que producto quieres?"
+                      id="buscador"
+                    />
+                    <input type="submit" class="submit-buscador" />
+                  </form>
+            </div>
+        </div>
     </header>
-    <section class="contenido">
-        
-        <article class="talleres" >
-            <h2 class="Ta">Tallleres</h2>
-            <ul>
-                <a href="https://dm1001.neocities.org/HDV/index.html"><li class="Ta1">Hoja de vida</li></a>   
-                <a href="https://www.figma.com/file/l0br7ZLOSFj0fCAR6iySjK/Clase2DWEB?node-id=22%3A8"> <li class="Ta2">Figma </li></a>
-                <a href="https://dm1001.neocities.org/FlashCard/index.html"><li class="Ta3">FlashCard</li> </a> 
-                <a href="https://dm1001.neocities.org/SL/index.html"><li class="Ta4">SopaDeLetras</li></a>
-            </ul>
-        </article>
 
-        <article class="consultas" >
-            <h2 class="Con">Consulta</h2>
-            <ul>
-                 <a href="https://www.40defiebre.com/que-es/landing-page"><li class="con1" >Que es un landPage</li> </a>  
-                <li class="con2" >Consulta 2</li>
-                <li class="con3" >Consulta 3</li>
-                <li class="con4">Consulta 4</li>
-            </ul>
-        </article>
-        <article class="retos" >
-           
-            <h2 class="Ret">Retos</h2>
-            <ul>
-               <a href="https://dm1001.neocities.org/carrito/index.html"><li class="ret1" >CarritoDeCompras</li></a> 
-                <li class="ret2" >Reto 2</li>
-                <li class="ret3" >Reto 3</li>
-                <li class="ret4">Reto 4</li>
-            </ul>
-        </article>
-    </section>
-
-    <div class="burbujas">
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-        <div class="burbuja"> </div>
-    </div>
-        <footer class="foot1">
-        
-            <a href="https://neocities.org/site/dm1001"> <img src="imagenes/emojione-monotone_racing-car.png" alt="caricon"></a>
-           
-            <a href="https://www.iue.edu.co/8-la-iue.html/"><img src="imagenes/descarga.png" alt="cityicon"></a>
-           <a href="https://github.com/Davidmg25"> <img src="imagenes/bi_git.png" alt="giticon"></a>
-        </footer>
-
-    </div>
-
+ 
   
+          </div>
+    
+    <section class="store">
+        <div class="container">
+            <div class="items">
+                <div class="row">
+
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Sevedol EXTRA FUERTE *8 und</h3>
+                            <img class="item-image" src="img/sevedol.webp">
+
+                            <div class="item-details">
+                                <h4 class="item-price">10.000$</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">aztriomicina *3 und 500 mg </h3>
+
+                            <img class="item-image" src="img/azitromicina.webp">
+
+                            <div class="item-details">
+                                <h4 class="item-price">18.000$</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Allerzitina 10 und</h3>
+
+                            <img class="item-image" src="img/allerzitina.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">15.000$</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Acetaminofen *100 und 500mg </h3>
+
+                            <img class="item-image" src="img/act.jpg">
+
+                            <div class="item-details">
+                                <h4 class="item-price">10.000$</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">dolex multisintomas </h3>
+
+                            <img class="item-image" src="dolex.png">
+                            <div class="item-details">
+                                <h4 class="item-price">20.000$</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="item shadow mb-4">
+                            <h3 class="item-title">Alcohol mk *750ml</h3>
+
+                            <img class="item-image" src="img/alcohol-antiseptico-mk-frasco-de-700-ml.webp">
+                            <div class="item-details">
+                                <h4 class="item-price">7.000$</h4>
+                                <button class="item-button btn btn-primary addToCart">AÑADIR AL CARRITO</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    
+    <section class="shopping-cart">
+        <div class="container">
+            <h1 class="text-center">CARRITO</h1>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+        
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ml-4 mb-0 shoppingCartTotal">0$</p>
+                        <div class="toast ml-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="mr-auto ml-1 text-secondary">Elemento en el carrito</strong>
+                                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                        <button class="btn btn-success ml-auto comprarButton" type="button" data-toggle="modal"
+                            data-target="#comprarModal">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="modal fade" id="comprarModal" tabindex="-1" aria-labelledby="comprarModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="comprarModalLabel">Gracias por su compra</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Pronto recibirá su pedido</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+
+    </section>
+   
+    <footer class="">
+        <p class="">Tienda virtual</p>
+    </footer>
+    
+
+
+
+
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <script src="./tienda.js"></script>
 
 </body>
+
 </html>
