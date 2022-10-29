@@ -1,0 +1,105 @@
+body{
+    background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+font-family: sans-serif;
+color: white;
+}
+
+main{
+    border: 1px solid black;
+    margin:  30px auto;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor{
+    width: 1200px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.contenedor-juego{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+    .contenedor-juego{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:1px;
+    }
+}
+
+.contenedor-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.3rem;
+}
+
+@media (min-width: 768px) {
+    .contenedor-grid{
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: .3rem;
+    }
+}
+
+
+.ficha{
+    background-color: #FFFEF7;
+    border-color: #E1E1E1;
+    border-radius: 0.8rem;
+}
+
+.ficha:hover{
+    background-color: #F7F5E7;
+    cursor: pointer;
+}
+
+.section1{
+    background-color: rgb(255, 255, 255,0.2);
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px;
+}
+button{
+    height: 140px;
+    width: 140px;
+    font-size: 40%;
+    color: black;
+    font-weight: bold;
+}
+
+.datos{
+background-color: rgb(255, 255, 255,0.2);
+width: 400px;
+height: 600px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+padding: 0 20px;
+
+}
+
+.estadisticas{
+
+border: 2px solid black;
+height: 29%;
+border-radius: 8%;
+padding: 10px 20px;
+box-sizing: border-box;
+text-align: center;
+}
+
+footer{
+    text-align: center;
+    text-decoration: none;
+}
+
+img{
+    width: 80%;
+}
