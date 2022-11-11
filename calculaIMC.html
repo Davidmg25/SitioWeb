@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Introducción a JavaScript | Calcula IMC</title>
+</head>
+<body>
+    <section class="header">
+        <h1>Calcular IMC</h1>
+    </section>
+
+    <div class="contenedor">
+        <form action="">
+            <fieldset>
+                <div class="contenedorCal contenedor_calculadora">
+                    <label for="">Altura en m</label>
+                    <input name="num1" class="textbox" type="number" placeholder="ejem: 1.80 metros">
+                    <label for="">Peso en kg</label>
+                    <input name="num2" class="textbox" type="number" placeholder="ejem: 80 Kg">
+                </div>
+                
+                <div class="contenedorCal contenedor_botones">
+                    <input onclick="calculaIMC(num1.value, num2.value)" class="boton_cal" type="submit" value="Calcular">
+                </div>
+            </fieldset>           
+        </form>
+    </div>
+    <div class="contenedor">
+        <a class="boton volver" href="index.html">Volver</a>
+    </div>
+    
+       
+</body>
+<script src="js/app.js"></script>
+</html>

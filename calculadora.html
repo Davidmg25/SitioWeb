@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Introducción a JavaScript | Calculadora</title>
+</head>
+<body>
+    <section class="header">
+        <h1>Calculadora</h1>
+    </section>
+
+    
+    <div class="contenedor">
+        <form action="">
+            <fieldset>
+                <div class="contenedorCal contenedor_calculadora">
+                    <label for="">Numero 1</label>
+                    <input name="num1" class="textbox" type="number">
+                    <label for="">Numero 2</label>
+                    <input name="num2" class="textbox" type="number">
+                </div>
+                
+                <div class="contenedorCal contenedor_botones">
+                    <input onclick="sum(num1.value, num2.value)" class="boton_cal" type="submit" value="+">
+                    <input onclick="res(num1.value, num2.value)" class="boton_cal" type="submit" value="-">
+                    <input onclick="mul(num1.value, num2.value)" class="boton_cal" type="submit" value="*">
+                    <input onclick="div(num1.value, num2.value)" class="boton_cal" type="submit" value="/">
+                </div>
+            </fieldset>           
+        </form>
+    </div>
+    <div class="contenedor">
+        <a class="boton volver" href="index.html">Volver</a>
+    </div>
+    
+       
+</body>
+<script src="js/calculadora.js"></script>
+</html>
